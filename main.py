@@ -1,4 +1,5 @@
 from game_data import data
+from art import logo 
 import random
 import os
 import time
@@ -38,6 +39,8 @@ def randomgen(n=-1):
 
 
 def mainfunc(n1=0,n2=0):
+  print('\n' * 30)
+  print(logo)
   n1=randomgen() if n1==0 else n1
   fc1=printinfo(n1)
   n2=randomgen(n1)
@@ -63,6 +66,7 @@ def mainfunc(n1=0,n2=0):
     if_correct(n3,n4)
 
 if __name__ == '__main__':
+  print(logo)
   mainfunc()
 
   
